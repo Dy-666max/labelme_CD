@@ -37,7 +37,7 @@ git clone https://github.com/shinianzhihou/labelme_cd.git
 cd labelme_cd
 
 # 4. 安装依赖
-pip install PyQt5 qtpy numpy Pillow PyYAML termcolor natsort colorama imgviz matplotlib
+pip install PyQt5 qtpy numpy Pillow PyYAML termcolor natsort colorama imgviz matplotlib opencv-python tqdm
 
 # 5. 验证安装
 python -c "import labelme; print('安装成功！')"
@@ -54,10 +54,19 @@ git clone https://github.com/shinianzhihou/labelme_cd.git
 cd labelme_cd
 
 # 3. 安装依赖
-pip install PyQt5 qtpy numpy Pillow PyYAML termcolor natsort colorama imgviz matplotlib
+pip install PyQt5 qtpy numpy Pillow PyYAML termcolor natsort colorama imgviz matplotlib opencv-python tqdm
 
 # 4. 验证安装
 python -c "import labelme; print('安装成功！')"
+```
+
+### 通过代理安装依赖（如需）
+
+```bash
+pip install <包名> --proxy http://127.0.0.1:7897
+# 例如
+pip install opencv-python --proxy http://127.0.0.1:7897
+pip install tqdm --proxy http://127.0.0.1:7897
 ```
 
 ### 安装问题排查
